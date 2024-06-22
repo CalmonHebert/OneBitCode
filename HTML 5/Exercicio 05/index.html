@@ -8,56 +8,70 @@
 </head>
 
 <body>
-  <h1>Formulário de Inscrição</h1>
+  <h1>Exercicio 05 - Formulário de Inscrição</h1>
 
-  <form action="get">
+  <form action="#" method="post">
     <!-- Nome -->
-    <label for="nome">Nome:</label>
-    <br />
-    <input type="text" id="nome" required />
+    <div>
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" name="nome" required />
+    </div>
+
+    <br>
 
     <!-- Email -->
-    <br /><br />
-    <label for="email">Email:</label>
-    <br />
-    <input type="email" id="email" required />
+    <div>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required />
+    </div>
+
+    <br>
 
     <!-- Whatssapp -->
-    <br /><br />
-    <label for="telefone">WhatssApp:</label>
-    <br />
-    <input type="tel" id="telefone" required />
+    <div>
+      <label for="telefone">WhatssApp:</label><br>
+      <input type="tel" id="telefone" name="telefone" required />
+    </div>
+
+    <br>
 
     <!-- Área de Atuação -->
-    <br /><br />
-    <label for="atuacao">Área de Atuação:</label>
-    <br />
-    <input type="radio" id="atuacao" value="Desenvolvimento" name="atuacao" />
-    <label for="atuacao">Desenvolvimento</label>
+    <div>
+      <label>Área de Atuação:</label><br>
+      <input type="radio" id="dev" value="dev" name="area" required />
+      <label for="dev">Desenvolvimento</label>
 
-    <input type="radio" id="quality" value="Quality" name="atuacao" />
-    <label for="quality">Quality Assurance (QA)</label>
+      <input type="radio" id="quality" value="Quality" name="area" required />
+      <label for="quality">Quality Assurance (QA)</label>
 
-    <input type="radio" id="analise" value="Quality" name="atuacao" />
-    <label for="analise">Analise de Dados</label>
+      <input type="radio" id="dados" value="dados" name="area" required />
+      <label for="dados">Analise de Dados</label>
 
-    <input type="radio" name="atuacao" value="infraestrutura" id="infraestrutura" />
-    <label for="infraestrutura">Infraestrutura</label>
+      <input type="radio" value="infra" id="infra" name="area" required />
+      <label for="infra">Infraestrutura</label>
+    </div>
+
+    <br>
 
     <!-- Observações -->
-    <br><br>
-    <label for="obs">Observações:</label>
+    <div>
+      <label for="obs">Observações:</label><br>
+      <br>
+      <textarea name="obs" id="obs" cols="40" rows="4"></textarea>
+    </div>
+
     <br>
-    <textarea name="obs" id="obs"></textarea>
 
     <!-- checkbox -->
-    <br><br>
-    <input type="checkbox" id="desejo">
-    <label for="desejo">Desejo receber novidades e ofertas por email</label>
+    <div>
+      <input type="checkbox" id="desejo">
+      <label for="desejo">Desejo receber novidades e ofertas por email</label>
+    </div>
 
-    <!-- Botao -->
     <br>
+    <!-- Botao -->
     <button type="submit">Enviar</button>
+
   </form>
 </body>
 
