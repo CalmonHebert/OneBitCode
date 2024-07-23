@@ -4,15 +4,17 @@
 }
 
 header {
-   padding: 1.5rem 0;
-   border-bottom: 1px solid #232323;
+   padding: 2rem 0;
+   border-bottom: 1px solid #030308;
    text-align: center;
-}
+   font-size: 1.125rem;
 
+}
 
 h1 {
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   font-weight: 100;
+   font-weight: 400;
+   font-size: 3.5rem;
 }
 
 p {
@@ -23,19 +25,21 @@ p {
 
 main {
    text-align: center;
-   margin: 1.5rem 0;
+   margin: 2rem 0;
+   font-size: 1.125rem;
 }
 
 h2 {
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    font-weight: 100;
+   margin-bottom: 1rem;
 }
 
 .inscreva {
    margin: 1.5rem 0 0 0;
    display: inline-block;
-   padding: 12px;
-   border-radius: 20px;
+   padding: 1rem 1.5rem;
+   border-radius: 30px;
    background-color: black;
    color: #fff;
    text-transform: uppercase;
@@ -43,7 +47,6 @@ h2 {
    font-family: sans-serif;
    font-weight: 700;
    font-size: 12px;
-
 }
 
 img {
@@ -61,15 +64,20 @@ img {
    background-color: #43abf6;
    text-decoration: none;
    color: #fff;
-   padding: 10px;
-   border-radius: 20px;
+   padding: 1rem 1.5rem;
+   border-radius: 30px;
    font-size: 12px;
    font-family: sans-serif;
 }
 
+.genres>li+li {
+   margin-left: 1rem;
+   margin-top: 1rem;
+}
+
 .explore li {
    display: inline-block;
-   margin: 3rem 0;
+   margin: 2rem 0;
 }
 
 #ver-mais {
@@ -80,11 +88,6 @@ img {
 footer {
    background-color: #232323;
    text-align: center;
-   height: 3rem;
    color: #fff;
-}
-
-footer p {
-   margin-top: 1rem;
-   display: inline-block;
+   padding: 1rem;
 }
