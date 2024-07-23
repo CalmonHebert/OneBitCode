@@ -1,0 +1,36 @@
+li:nth-child(3) {
+   color: red;
+}
+
+li:nth-child(even) {
+   color: blue;
+}
+
+li:hover {
+   background-color: #777;
+
+}
+
+input:focus {
+   background-color: red;
+}
+
+li::before {
+   content: " - ";
+}
+
+li::after {
+   content: "!";
+}
+
+li:last-child {
+   color: rgb(199, 199, 25);
+}
+
+li:first-child {
+   color: blueviolet;
+}
+
+li:not(:first-child) {
+   background-color: aqua;
+}
