@@ -15,9 +15,16 @@
       4 - o ano de nascimento
    
       Depois o programa deve exibir o nome completo do recruta, seu campo de estudo e sua idade (apenas baseada no ano de nascimento). -->
-
+   <h1>Cadastro de Recrutas</h1>
    <script>
+      var nome = prompt('Qual seu primeiro nome?');
+      var sobrenome = prompt('Qual seu sobrenome?')
+      var estudo = prompt('Seu campo de estudo?')
+      var ano = prompt('Qual seu ano de Nascimento?')
 
+      idade = 2024 - ano;
+
+      alert(`${nome} ${sobrenome}, atua na area de ${estudo} com ${idade} anos de idade.`)
    </script>
 </body>
 

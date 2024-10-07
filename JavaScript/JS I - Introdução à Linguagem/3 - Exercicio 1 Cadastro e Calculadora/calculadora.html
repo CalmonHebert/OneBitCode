@@ -10,9 +10,17 @@
 <body>
    <!-- Escreve um programa em javascript que permita inserir dois valores numéricos e então calcule o resultado das quatro operações básicas (soma, subtração, multiplicação e divisão).
    Após calcular os resultados o programa deve exibi-los na tela. -->
-
+   <h1>Calculadora</h1>
    <script>
+      var primeiro = prompt('Digite o primeiro numero: ');
+      var segundo = prompt('Digite o segundo numero: ');
 
+      var soma = parseInt(primeiro) + parseInt(segundo);
+      var sub = primeiro - segundo;
+      var mult = primeiro * segundo;
+      var div = primeiro / segundo;
+
+      var resultado = alert(`soma: ${soma},\n subtração: ${sub},\n Multiplicação: ${mult},\n Divisão: ${div}`);
    </script>
 </body>
 
