@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <script>
+      let nomeAtk = prompt('Nome do personagem atacante: ');
+      let poderAtk = Number(prompt('Poder do personagem atacante:'))
+
+      let nomeDef = prompt('Nome do personagem defensor: ');
+      let potosVidaDef = Number(prompt('Quantos pontos de vida tem o personagem:'));
+      let defesa = Number(prompt('Quanto tem de defesa o personagem:'));
+      let escudo = confirm('O personagem possui escudo?');
+
+      let restante;
+      let dano;
+
+      if ((poderAtk > defesa) && escudo === false) {
+         dano = poderAtk - defesa;
+         restante = potosVidaDef - dano;
+         alert(`Dano causado: ${dano}, pontos de vida restantes de ${nomeDef}:  ${restante}`)
+      } else if (poderAtk > defesa && escudo == true) {
+         dano = (poderAtk - defesa) / 2;
+         let restante = potosVidaDef - dano;
+         alert(`Dano causado: ${dano}, pontos de vida restantes de ${nomeDef}:  ${restante}`)
+      } else {
+         dano = 0;
+         restante = potosVidaDef - dano;
+         alert(`Dano causado: ${dano}, pontos de vida restantes de ${nomeDef}: ${restante}`)
+      }
+
+   </script>
+</body>
+
+</html>
