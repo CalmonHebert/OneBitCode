@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<h1>Visitando Novas Cidades</h1>
+
+<p>Escreva um programa em javascript que peça o nome de um turista e então pergunte se ele já visitou alguma cidade. Caso a resposta seja sim, pergunte o nome da cidade e o armazene em uma variável, e então continue perguntando se o turista visitou alguma outra cidade até que a resposta seja não. No fim, o programa deve exibir o nome do turista, quantas e quais cidades ele visitou.</p>
+
+<body>
+   <script>
+      let nome = prompt('Qual seu nome?');
+
+      let visitouCidade = prompt('já visitou alguma cidade? (sim/não)' )
+      let cont = 0;
+      let cidadesVisitadas = '';
+      let cidade;
+
+      while (visitouCidade == 'sim') {
+         cidade = prompt('Qual nome da cidade?');
+         cidadesVisitadas = cidadesVisitadas + cidade + ', ';
+         cont++
+
+         visitouCidade = prompt('visitou outra cidade?')
+      }
+      alert(nome + ' visitou ' + cont + ' cidades: ' + cidadesVisitadas)
+   </script>
+</body>
+
+</html>
