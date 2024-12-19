@@ -8,7 +8,7 @@ const personagens = [
    { nivel: 29, nome: "Muradin", raca: "Anão", classe: "Guerreiro" },
 ]
 
-// map
+// map: permite obter um novo array a partir de um array existente
 
 // const nomes = [];
 
@@ -22,7 +22,7 @@ const nomes = personagens.map(function (personagem) {
 
 console.log(nomes);
 
-// filter
+// filter: permite obter um novo array contendo apenas elementos específicos de um array existente.
 
 // const orcs = [];
 
@@ -38,7 +38,7 @@ const orcs = personagens.filter(function (personagem) {
 
 console.log(orcs);
 
-// reduce
+// reduce: serve para reduzir um array existente a um valor final qualquer, passando um valor entre cada iteração sobre esse array e retornando ele no final.
 
 const nivelTotal = personagens.reduce(function (valorAcumulado, personagem) {
    return valorAcumulado + personagem.nivel;
@@ -56,3 +56,11 @@ const racas = personagens.reduce(function (valorAcumulado, personagem) {
 }, {});
 
 console.log(racas);
+
+// sort: ordena os elementos de um array a partir de comparações entre duplas de elementos.
+
+const personagensOrdenados = personagens.slice().sort(function (a, b) {
+   return b.nivel - a.nivel;
+})
+
+console.log(personagensOrdenados);
